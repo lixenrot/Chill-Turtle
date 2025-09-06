@@ -16,22 +16,30 @@ up_button = "w"
 down_button = "s"
 right_button = "d"
 left_button = "a"
-up_right_button = "q" 
-up_left_button = "e"
+up_right_button = "e" 
+up_left_button = "q"
 down_right_button = "c"
 down_left_button = "z"
 increase_movement_button = "i"
 increase_rotation_button = "o"
 decrease_rotation_button = "l"
 decrease_movement_button = "k"
+undo_button = "u"
 
 #Funciones
 
 def actual_position()->str:
     return f"Posiciones X:{t.xcor()} Y: {t.ycor()}"
+
 def actual_angle()->str:
     return f"La rotación ahora es de: {t.heading()}° Grados"
 
+def undo()->None:
+    t.undo()
+    print("Se ha deshecho el último movimiento")
+    print(actual_position())
+    print(actual_angle())
+    
 #Aumentar-disminuir Variables
 
 def increase_rotation_value()->None:
