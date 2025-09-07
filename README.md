@@ -6,6 +6,12 @@ chill turtle es basicamente un programa que usa la libreria turtle de python y l
 
 ¿Cómo ejecutarlo?.
 
+
+
+https://github.com/user-attachments/assets/af4ed23d-d8e8-430a-8036-2127e1e26545
+
+
+
 Descarga todos los archivos del proyecto y colócalos en una misma carpeta.
 
 Descarga e instala Python desde https://www.python.org/downloads/
