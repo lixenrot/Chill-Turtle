@@ -21,6 +21,8 @@ También puedes presionar F5 (siempre y cuando esa ventana esté seleccionada).
 
 Controles
 
+PUEDES MOVER EL PERSONAJE ARRASTRANDOLO CON EL MOUSE
+
 Movimiento sin eje:
 
 W, A, S, D
