@@ -8,7 +8,7 @@ chill turtle es basicamente un programa que usa la libreria turtle de python y l
 
 Descarga todos los archivos del proyecto y colócalos en una misma carpeta.
 
-Descarga e instala Python desde python.org
+Descarga e instala Python desde https://www.python.org/downloads/
 .
 
 En el buscador de Windows escribe IDLE y abre el programa.
