@@ -4,36 +4,58 @@ Bienvenido a mi primer programa espero te guste
 
 chill turtle es basicamente un programa que usa la libreria turtle de python y le añade funciones para poder dibujar mas a gusto. por ahora esta en alfa muy poco a poco lo estoy haciendo, soy novato y este es un proyecto que hago para aprender a usar librerias <3
 
-PARA EJECUTAR EL PROGRAMA TIENES QUE INSTALAR PYTHON EN TU PC Y EJECUTAR EL "Turtle_Main"
+¿Cómo ejecutarlo?
 
-controles:
+Descarga todos los archivos del proyecto y colócalos en una misma carpeta.
 
-movimiento sin eje:
+Descarga e instala Python desde python.org
+.
 
-W,A,S,D 
+En el buscador de Windows escribe IDLE y abre el programa.
 
-movimiento diagonal sin eje:
+En IDLE selecciona la pestaña File y luego Open.... Abre el archivo turtle_main.py.
 
-Q,E,Z,C
+En la ventana que se abre, ve a la pestaña Run y selecciona Run Module.
+También puedes presionar F5 (siempre y cuando esa ventana esté seleccionada).
 
-movimiento con eje:
 
-UP,DOWN (flechas del teclado)
+Controles
 
-rotación:
+Movimiento sin eje:
 
-LEFT,RIGHT
+W, A, S, D
 
-Aumentar o disminuir valores:
+Movimiento diagonal sin eje:
 
-aumentar-disminuir valor de movimiento:
+Q, E, Z, C
 
-I,k
+Movimiento con eje:
 
-aumentar-disminuir valor de rotación:
+Flechas arriba y abajo
 
-O,L
+Rotación:
 
-borrar los ultimos cambios:
+Flechas izquierda y derecha
+
+Ajuste de valores de movimiento:
+
+I para aumentar, K para disminuir
+
+Ajuste de valores de rotación:
+
+O para aumentar, L para disminuir
+
+Deshacer la última acción:
 
 U
+
+Limpiar la pantalla:
+
+M
+
+Levantar el lápiz:
+
+T
+
+Bajar el lápiz:
+G
