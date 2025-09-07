@@ -1,7 +1,5 @@
 speed = 10
-shape = "arrow"
+shape = "triangle"
 resize_mode = "user"
-shape_size = (1,1,0.5)
-shape_color = "black"
-
-#:D
+shape_size = (1,1,0.1)
+shape_color = "blue"

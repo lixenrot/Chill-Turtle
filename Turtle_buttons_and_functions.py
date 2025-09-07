@@ -25,6 +25,10 @@ increase_rotation_button = "o"
 decrease_rotation_button = "l"
 decrease_movement_button = "k"
 undo_button = "u"
+clear_page_button = "m"
+up_pen_button = "p"
+down_pen_button = "n"
+
 
 #Funciones
 
@@ -39,7 +43,26 @@ def undo()->None:
     print("Se ha deshecho el último movimiento")
     print(actual_position())
     print(actual_angle())
-    
+
+def clear_page()->None:
+    t.clear()
+    print("Se ha limpiado la pantalla")
+    print(actual_position())
+    print(actual_angle())
+
+def pen_up()->None:
+    t.penup()
+    print("El lápiz está arriba, la tortuga no dibujará al moverse")
+    print(actual_position())
+    print(actual_angle())
+
+def pen_down()->None:
+    t.pendown()
+    print("El lápiz está abajo, la tortuga dibujará al moverse")
+    print(actual_position())
+    print(actual_angle())
+
+
 #Aumentar-disminuir Variables
 
 def increase_rotation_value()->None:

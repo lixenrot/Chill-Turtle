@@ -22,7 +22,8 @@ t.pencolor("#ff2acd") #el color del lapiz es diferente al de la tortuga
 
 #4 funciones de la tortuga
 
-t.onscreenclick(t.goto)
+t.ondrag(t.goto) #para mover la tortuga con el mouse
+t.listen()
 
 #5 movimiento de la tortuga
 
@@ -43,18 +44,8 @@ t.onkeypress(tf.increase_movement_value, tf.increase_movement_button)
 t.onkeypress(tf.increase_rotation_value, tf.increase_rotation_button)
 t.onkeypress(tf.decrease_movement_value, tf.decrease_movement_button)
 t.onkeypress(tf.decrease_rotation_value, tf.decrease_rotation_button)
-
-
-
-
-
-
-
-
-
-
-
-
-
+t.onkeypress(tf.clear_page, tf.clear_page_button)
+t.onkeypress(tf.pen_up, tf.up_pen_button)
+t.onkeypress(tf.pen_down, tf.down_pen_button)
 t.listen()
 t.mainloop()
