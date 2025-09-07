@@ -26,8 +26,8 @@ decrease_rotation_button = "l"
 decrease_movement_button = "k"
 undo_button = "u"
 clear_page_button = "m"
-up_pen_button = "p"
-down_pen_button = "n"
+up_pen_button = "t"
+down_pen_button = "g"
 
 
 #Funciones

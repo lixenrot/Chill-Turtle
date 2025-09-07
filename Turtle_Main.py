@@ -18,7 +18,7 @@ t.color(tp.shape_color)
 #3 propiedades del lapiz
 
 t.pensize(3)
-t.pencolor("#ff2acd") #el color del lapiz es diferente al de la tortuga
+t.pencolor("#00FFF7") #el color del lapiz es diferente al de la tortuga
 
 #4 funciones de la tortuga
 
