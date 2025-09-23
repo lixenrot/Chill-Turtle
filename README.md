@@ -2,7 +2,7 @@ HOLA!.
 
 Bienvenido a mi primer programa espero te guste
 
-chill turtle es basicamente un programa que usa la libreria turtle de python y le añade funciones para poder dibujar mas a gusto. por ahora esta en alfa muy poco a poco lo estoy haciendo, soy novato y este es un proyecto que hago para aprender a usar librerias <3
+chill turtle es basicamente un programa que usa la libreria turtle de python y le añade funciones para poder dibujar mas a gusto.
 
 ¿Cómo ejecutarlo?.
 
