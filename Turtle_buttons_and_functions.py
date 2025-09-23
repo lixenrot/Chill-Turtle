@@ -5,32 +5,30 @@ import turtle as t
 
 rotation_value = 5
 movement_value = 10
-
 #Variables de botones
 
-rotate_right_button = "Right"
-rotate_left_button = "Left"
-forward_button = "Up"
-back_button = "Down"
-up_button = "w"
-down_button = "s"
-right_button = "d"
-left_button = "a"
-up_right_button = "e" 
+rotate_right_button = "d"
+rotate_left_button = "a"
+forward_button = "w"
+back_button = "s"
+up_button = "Up"
+down_button = "Down"
+right_button = "Right"
+left_button = "Left"
+up_right_button = "e"
 up_left_button = "q"
 down_right_button = "c"
 down_left_button = "z"
-increase_movement_button = "i"
-increase_rotation_button = "o"
-decrease_rotation_button = "l"
-decrease_movement_button = "k"
+set_movement_value_button = "m"
+set_rotation_value_button = "r"
+set_pen_color_button = "t"
+set_pen_size_button = "y"
 undo_button = "u"
-clear_page_button = "m"
-up_pen_button = "t"
-down_pen_button = "g"
+clear_page_button = "p"
+up_or_down_pen_button = "space"
 
 
-#Funciones
+# funciones usadas en codigo
 
 def actual_position()->str:
     return f"Posiciones X:{t.xcor()} Y: {t.ycor()}"
@@ -38,6 +36,7 @@ def actual_position()->str:
 def actual_angle()->str:
     return f"La rotación ahora es de: {t.heading()}° Grados"
 
+# funciones
 def undo()->None:
     t.undo()
     print("Se ha deshecho el último movimiento")
@@ -50,40 +49,52 @@ def clear_page()->None:
     print(actual_position())
     print(actual_angle())
 
-def pen_up()->None:
-    t.penup()
-    print("El lápiz está arriba, la tortuga no dibujará al moverse")
+#funciones del pincel
+
+def pen_up_or_down(): 
+    if t.isdown():
+        t.penup()
+    else:
+        t.pendown()
+
     print(actual_position())
     print(actual_angle())
 
-def pen_down()->None:
-    t.pendown()
-    print("El lápiz está abajo, la tortuga dibujará al moverse")
-    print(actual_position())
-    print(actual_angle())
+    t.listen()
+    return
 
+def set_pen_color():
+    color = t.textinput("Color","Porfavor indica el color que quieres en ingles y en minusculas \nTambien puedes usar un codigo hexadecimal poniendo '#' al principio seguido de codigo")
+    try:
+        t.pencolor(color)
+    except:
+        print(f"Error color: '{color}' no válido")
+    t.listen()
 
-#Aumentar-disminuir Variables
+def set_pen_size():
+    pen_size = t.numinput("Tamaño pincel","Porfavor ingresa un numero con el tamaño del pince que deseas")
+    t.pensize(pen_size)
 
-def increase_rotation_value()->None:
-    global rotation_value
-    rotation_value += 1
-    print(f"El valor de la rotación es: {rotation_value}")
+# establecer valores
 
-def increase_movement_value()->None:
+def set_movement_value():
     global movement_value
-    movement_value += 1
-    print(f"El valor del movimiento es: {movement_value} ")
+    print(movement_value)
+    new_movement_value = t.numinput(title="Valor De Movimiento",prompt="Porfavor ingrese el valor de movimiento de la tortuga, el valor predeterminado es 10 pixeles",default=10)
+    if new_movement_value != None:
+        movement_value = new_movement_value
+    print(movement_value)
+    t.listen()
 
-def decrease_movement_value()->None:
-    global movement_value
-    movement_value -= 1
-    print(f"El valor del movimiento es: {movement_value} ")
-
-def decrease_rotation_value()->None:
+def set_rotation_value():
     global rotation_value
-    rotation_value -= 1
-    print(f"El valor de la rotación es: {rotation_value}")
+    print(rotation_value)
+    new_rotation_value = t.numinput(title="Valor De Rotación",prompt="Porfavor ingrese el valor de rotación de la tortuga, el valor predeterminado es 5 pixeles",default=5)
+    if new_rotation_value != None:
+        rotation_value = new_rotation_value
+    print(rotation_value)
+    t.listen()
+
 
 #rotaciones
 
@@ -127,22 +138,17 @@ def move_down()-> None:
 #movimiento diagonal
 
 def move_up_right() -> None:
-    t.setx(t.xcor() + movement_value)
-    t.sety(t.ycor() + movement_value)
+    t.goto(t.xcor()+movement_value,t.ycor()+movement_value)
     print(actual_position())
 
 def move_up_left() -> None:
-    t.setx(t.xcor() - movement_value)
-    t.sety(t.ycor() + movement_value)
+    t.goto(t.xcor()-movement_value,t.ycor()+movement_value)
     print(actual_position())
 
 def move_down_right() -> None:
-    t.setx(t.xcor() + movement_value)
-    t.sety(t.ycor() - movement_value)
+    t.goto(t.xcor()+movement_value,t.ycor()-movement_value)
     print(actual_position())
 
 def move_down_left() -> None:
-    t.setx(t.xcor() - movement_value)
-    t.sety(t.ycor() - movement_value)
+    t.goto(t.xcor()-movement_value,t.ycor()-movement_value)
     print(actual_position())
-
