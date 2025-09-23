@@ -31,7 +31,7 @@ PUEDES MOVER EL PERSONAJE ARRASTRANDOLO CON EL MOUSE
 
 Movimiento sin eje:
 
-W, A, S, D
+UP,DOWN,LEFT,RIGHT
 
 Movimiento diagonal sin eje:
 
@@ -39,19 +39,27 @@ Q, E, Z, C
 
 Movimiento con eje:
 
-Flechas arriba y abajo
+W,S
 
-Rotación:
+Rotar:
 
-Flechas izquierda y derecha
+A,D
 
 Ajuste de valores de movimiento:
 
-I para aumentar, K para disminuir
+M
 
 Ajuste de valores de rotación:
 
-O para aumentar, L para disminuir
+r
+
+Cambiar color:
+
+T
+
+Cambiar tamaño del pincel:
+
+Y
 
 Deshacer la última acción:
 
@@ -59,11 +67,9 @@ U
 
 Limpiar la pantalla:
 
-M
+p
 
-Levantar el lápiz:
+Levantar o bajar el lapiz:
 
-T
+space
 
-Bajar el lápiz:
-G
