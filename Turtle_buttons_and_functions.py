@@ -73,7 +73,16 @@ def set_pen_color():
 
 def set_pen_size():
     pen_size = t.numinput("Tamaño pincel","Porfavor ingresa un numero con el tamaño del pince que deseas")
+    try:
+        if pen_size <= 0:
+            t.listen()
+            return
+    except:
+        if pen_size == None:
+            t.listen()
+            return
     t.pensize(pen_size)
+    t.listen()
 
 # establecer valores
 
